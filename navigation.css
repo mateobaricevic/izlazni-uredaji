@@ -1,0 +1,114 @@
+/* CSS Document */
+
+.navigation {
+	background-color: white;
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	height: 50px;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}
+
+.active {
+    background: #64B2D4;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+nav li {
+    display: inline-block;
+    float: left;
+}
+
+nav li a {
+    display: block;
+    min-width: 130px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+    color: black;
+    background: white;
+    text-decoration: none;
+}
+
+nav li:hover a {
+    background: #016496;
+	color: white;
+}
+
+nav li:hover ul a {
+    background: #F3F3F3;
+    color: #2F3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+nav li:hover ul a:hover {
+    background: #016496;
+    color: white;
+}
+
+nav li ul {
+    display: none;
+}
+
+nav li ul li {
+    display: block;
+    float: none;
+}
+
+nav li ul li a {
+    width: auto;
+    min-width: 70px;
+    padding: 2px 30px;
+}
+
+nav ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}
+
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: #016496;
+    text-align: center;
+    padding: 12px 0;
+    display: none;
+	cursor: pointer;
+	border-top: 1px solid #F3F3F3;
+	box-shadow: 0 -1px 6px 0 rgba(0,0,0,.3);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu {
+    display: block;
+}
+
+@media screen and (max-width : 800px) {
+    nav ul {
+        position: static;
+        display: none;
+    }
+	
+    nav ul li, li a {
+        width: 100%;
+    }
+	
+    .show-menu {
+        display: block;
+    }
+}

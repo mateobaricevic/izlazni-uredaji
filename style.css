@@ -1,0 +1,179 @@
+/* CSS Document */
+
+body {
+	background-image: url(slike/index_background.jpg);
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #016496;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}
+
+header h1 {
+	font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 32px;
+	color: white;
+	padding-top: 8px;
+	padding-left: 40px;
+	float: left;
+}
+
+header img {
+	display: block;
+	float: right;
+	padding-top: 10px;
+	padding-right: 50px;
+	height: 80px;
+}
+
+section {
+	padding-top: 150px;
+	padding-bottom: 30px;
+	width: 100%;
+	display: table;
+}
+
+section h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;
+	margin: auto;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 20px 25px;
+	background-color: #016496;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}
+
+section p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 21px;
+	color: white;
+	margin: 30px;
+	margin-bottom: 0;
+	padding: 25px;
+	float: left;
+	max-width: 1050px;
+	background-color: #016496;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}
+
+section img {
+	margin: 30px;
+	margin-bottom: 0;
+	float: right;
+	width: 550px;
+	border: 5px solid #016496;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}
+
+section ol.chapters {
+	background-color: #016496;
+	margin: 30px;
+	padding: 0;
+	max-width: 500px;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}
+
+section ol li {
+	list-style-type: none;
+	padding: 22px 0 0 28px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: white;
+}
+
+section ol li a {
+	color: white;
+	text-decoration: none;
+}
+
+section ol li a:hover {
+	color: #64B2D4;
+	text-decoration: none;
+}
+
+section a {
+	color: #64B2D4;
+	text-decoration: none;
+}
+
+section a:hover {
+	color: #64B2D4;
+	text-shadow: 0 0 3px #64B2D4;
+}
+
+section table {
+	margin: 30px;
+	padding: 15px;
+	background: #016496;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}
+
+section table td {
+	padding: 5px;
+	min-width: 100px;
+	border: 1px solid;
+	box-shadow: 2px 2px 8px 0 rgba(0,0,0,.3);
+}
+
+section table th {
+	padding: 5px;
+	min-width: 100px;
+	background: #64B2D4;
+	border: 1px solid;
+	box-shadow: 2px 2px 8px 0 rgba(0,0,0,.3);
+	
+}
+
+section ul {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 21px;
+	color: white;
+	margin: 30px;
+	margin-bottom: 0;
+	padding: 25px 45px;
+	float: left;
+	max-width: 1050px;
+	background-color: #016496;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}
+
+section ul li {
+	padding: 3px;
+}
+
+@media screen and (max-width: 800px) {
+    header h1 {
+		display: none;
+    }
+	
+	header img {
+		float: none;
+		padding-left: 20px;
+		margin: auto;
+	}
+	
+	section {
+		padding-bottom: 30px;
+	}
+	
+	section img {
+		float: none;
+		display: block;
+		margin: auto;
+		width: 80%;
+	}
+	
+}
